@@ -17,7 +17,7 @@ import { db } from "@/service/db";
 import { MdDelete } from "react-icons/md";
 import { FiShare2 } from "react-icons/fi";
 
-import styles from './styles.module.scss'
+import styles from '@/styles/styles.module.scss'
 import Link from "next/link";
 
 type userProps = {
