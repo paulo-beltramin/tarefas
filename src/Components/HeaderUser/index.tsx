@@ -16,7 +16,7 @@ const HeaderUser = () => {
 
                         <p>
                             <Link href={'/'}>
-                                Tarefas 
+                                Tarefas
                             </Link>
 
                             <span>+</span>
@@ -24,9 +24,9 @@ const HeaderUser = () => {
 
                         {session?.user?.email && (
                             <Link href={'/admin'}>
-                                <button >
+                               
                                     Meu painel
-                                </button>
+                                
                             </Link>
                         )}
 
