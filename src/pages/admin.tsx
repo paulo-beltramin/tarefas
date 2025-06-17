@@ -36,7 +36,7 @@ type tasksProps = {
 }
 
 
- const Admin=({ user }: userProps) =>{
+export default function Admin({ user }: userProps) {
 
   const [input, setInput] = useState('')
   const [check, setCheck] = useState(false)
@@ -185,13 +185,13 @@ type tasksProps = {
   )
 }
 
-export default Admin
+
 
 export const getServerSideProps: GetServerSideProps = async ({ req }) => {
 
   const session = await getSession({ req })
 
-  if (!session?.user?.email){
+  if (!session?.user?.email) {
     return {
       redirect: {
         destination: '/',

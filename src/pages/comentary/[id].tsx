@@ -36,7 +36,7 @@ type commentsProps = {
   comment: string
 }
 
-const Comentary = ({ item, list }: taskProps) => {
+export default function Comentary({ item, list }: taskProps) {
 
   const { data: session } = useSession()
 
@@ -49,8 +49,8 @@ const Comentary = ({ item, list }: taskProps) => {
   const handleComment = async (e: FormEvent) => {
     e.preventDefault()
 
-    if(input === ''){
-      return 
+    if (input === '') {
+      return
     }
 
     if (!session?.user?.email || !session?.user?.name) {
@@ -160,7 +160,6 @@ const Comentary = ({ item, list }: taskProps) => {
   )
 }
 
-export default Comentary;
 
 
 
