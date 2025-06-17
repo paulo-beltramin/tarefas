@@ -142,7 +142,6 @@ export default function Admin({ user }: userProps) {
 
         <div className={styles.container_tasks__list}>
           <h2>Minhas tarefas</h2>
-
           <ul>
             {tasks.map((item) => (
               <li key={item.id}>
@@ -184,8 +183,6 @@ export default function Admin({ user }: userProps) {
     </>
   )
 }
-
-
 
 export const getServerSideProps: GetServerSideProps = async ({ req }) => {
 
