@@ -23,7 +23,7 @@ const HeaderUser = () => {
                         </p>
 
                         {session?.user?.email && (
-                            <Link href={'/admin'}>
+                            <Link href={'/dashboard'}>
                                
                                     Meu painel
                                 
